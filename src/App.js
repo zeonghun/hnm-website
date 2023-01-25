@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import ProductAll from "./page/ProductAll";
 import Login from "./page/Login";
 import ProductDetail from "./page/ProductDetail";
+import Navbar from "./component/Navbar";
 
 // 유저는 메뉴와 상품들을 볼 수 있다
 // 유저는 로그인을 할 수 있다
@@ -14,6 +15,7 @@ import ProductDetail from "./page/ProductDetail";
 function App() {
   return (
     <div>
+      <Navbar/>
       <Routes>
         <Route path="/" element={<ProductAll />} />
         <Route path="/login" element={<Login />} />
