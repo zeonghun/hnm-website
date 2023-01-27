@@ -14,7 +14,7 @@ const Navbar = () => {
         <div>로그인</div>
       </div>
       <div className="logo-img">
-        <img width={100} src="https://1000logos.net/wp-content/uploads/2017/02/Hennes-Logo-19682.jpg" />
+        <img width={150} src="https://1000logos.net/wp-content/uploads/2017/02/Hennes-Logo-19682.jpg" />
       </div>
       <div className="menu-area">
         <ul className="menu-list">
