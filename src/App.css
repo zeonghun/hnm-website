@@ -12,6 +12,7 @@
 .logo-img {
   display: flex;
   justify-content: center;
+  cursor: pointer;
 }
 
 .menu-area {
@@ -53,4 +54,14 @@
 .card:hover{
   transform: scale(1.1);
   z-index: 1;
+}
+
+.login-form{
+  width: 500px;
+}
+
+.login-area{
+  display:flex;
+  justify-content: center;
+  margin-top: 50px;
 }
