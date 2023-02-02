@@ -4,7 +4,7 @@ import { faUser } from "@fortawesome/free-regular-svg-icons";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { useNavigate } from "react-router-dom";
 
-const Navbar = () => {
+const Navbar = ({ authenticate, setAuthenticate }) => {
   const menuList = ["여성", "Divided", "남성", "신생아/유아", "아동", "H&M HOME", "스포츠", "Sale", "지속가능성"];
   const navigate = useNavigate();
   const goToLogin = () => {
@@ -16,10 +16,17 @@ const Navbar = () => {
   return (
     <div>
       <div className="login-button" onClick={goToLogin}>
-        <div className="user-icon">
-          <FontAwesomeIcon icon={faUser} />
-        </div>
-        <div>로그인</div>
+        {authenticate ? (
+          <div onClick={() => setAuthenticate(false)}>
+            <FontAwesomeIcon icon={faUser} className="user-icon"/>
+            <span>로그아웃</span>
+          </div>
+        ) : (
+          <div onClick={() => navigate("/login")}>
+            <FontAwesomeIcon icon={faUser} className="user-icon"/>
+            <span>로그인</span>
+          </div>
+        )}
       </div>
       <div className="logo-img" onClick={goToHome}>
         <img width={150} src="https://1000logos.net/wp-content/uploads/2017/02/Hennes-Logo-19682.jpg" />

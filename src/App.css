@@ -1,7 +1,7 @@
 .login-button {
   display: flex;
   justify-content: flex-end;
-  margin: 30px;
+  margin: 20px;
   cursor: pointer;
 }
 
@@ -46,22 +46,41 @@
   outline: none;
 }
 
-.card{
-  border:none !important;
+.card {
+  border: none !important;
   margin-bottom: 20px;
 }
 
-.card:hover{
+.card:hover {
   transform: scale(1.1);
   z-index: 1;
 }
 
-.login-form{
+.login-form {
   width: 500px;
 }
 
-.login-area{
-  display:flex;
+.login-area {
+  display: flex;
   justify-content: center;
   margin-top: 50px;
+}
+
+.product-img {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.product-info {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.drop-down {
+  margin-top: 20px;
+}
+
+.add-button {
+  margin-top: 20px;
+  width: 100%;
 }
